@@ -85,6 +85,20 @@
             elements.contactForm.addEventListener('submit', handleFormSubmit);
         }
 
+
+                  // Product buttons
+        document.querySelectorAll('.product-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                // Get product name from the card
+                const productCard = this.closest('.product-card');
+                const productName = productCard.querySelector('.product-name').textContent;
+                const productBrand = productCard.querySelector('.product-brand').textContent;
+                
+                // Redirect to contact page with product info
+                window.location.href = `contact.html?product=${encodeURIComponent(productBrand + ' ' + productName)}`;
+            });
+        });
+
         // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
