@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="View our gallery of completed projects, sample works, and our modern printing facility. Quality printing and binding examples.">
+    <meta name="keywords" content="printing gallery, sample works, printer shop photos, binding examples, printing portfolio">
+    <title>Gallery - Ragu Printers</title>
+    
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-print"></i>
+                <span>Ragu Printers</span>
+            </div>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="services.html" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="pricing.html" class="nav-link">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a href="gallery.html" class="nav-link active">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Gallery</h1>
+            <p>Showcasing our quality work and modern facility</p>
+        </div>
+    </section>
+
+    <!-- Gallery Filter -->
+    <section class="gallery-filter">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="facility">Our Facility</button>
+                <button class="filter-btn" data-filter="printing">Printing</button>
+                <button class="filter-btn" data-filter="binding">Binding</button>
+                <button class="filter-btn" data-filter="lamination">Lamination</button>
+                <button class="filter-btn" data-filter="equipment">Equipment</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="gallery-grid">
+        <div class="container">
+            <div class="gallery-items">
+                <!-- Facility Images -->
+                <div class="gallery-item" data-category="facility">
+                    <div class="gallery-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-store"></i>
+                            <h4>Modern Shop Front</h4>
+                            <p>Our welcoming storefront with clear signage and professional appearance</p>
+                        </div>
+                    </div>
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h3>Shop Exterior</h3>
+                            <p>Professional storefront design</p>
+                            <button class="view-btn" onclick="openModal('facility-1')">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="facility">
+                    <div class="gallery-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-desktop"></i>
+                            <h4>Customer Service Area</h4>
+                            <p>Comfortable waiting area with service counters for customer consultations</p>
+                        </div>
+                    </div>
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h3>Service Counter</h3>
+                            <p>Customer consultation area</p>
+                            <button class="view-btn" onclick="openModal('facility-2')">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="facility">
+                    <div class="gallery-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-tools"></i>
+                            <h4>Repair Workshop</h4>
+                            <p>Well-equipped workshop for printer repairs and maintenance</p>
+                        </div>
+                    </div>
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h3>Repair Workshop</h3>
+                            <p>Professional repair facility</p>
+                            <button class="view-btn" onclick="openModal('facility-3')">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Equipment Images -->
+                <div class="gallery-item" data-category="equipment">
+                    <div class="gallery-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-print"></i>
+                            <h4>Commercial Printers</h4>
+                            <p>High-speed commercial printers for bulk printing jobs</p>
+                        </div>
+                    </div>
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h3>Commercial Printers</h3>
+                            <p>High-volume printing equipment</p>
+                            <button class="view-btn" onclick="openModal('equipment-1')">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="equipment">
+                    <div class="gallery-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-copy"></i>
+                            <h4>Xerox Machines</h4>
+                            <p>Professional-grade photocopying machines for all your copying needs</p>
+                        </div>
+                    </div>
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h3>Xerox Equipment</h3>
+                            <p>Professional copying machines</p>
+                            <button class="view-btn" onclick="openModal('equipment-2')">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="equipment">
+                    <div class="gallery-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-cut"></i>
+                            <h4>Binding Equipment</h4>
+                            <p>Professional binding machines for spiral, comb, and perfect binding</p>
+                        </div>
+                    </div>
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h3>Binding Machines</h3>
+                            <p>Professional binding equipment</p>
+                            <button class="view-btn" onclick="openModal('equipment-3')">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Printing Samples -->
+                <div class="gallery-item" data-category="printing">
+                    <div class="gallery-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-file-alt"></i>
+                            <h4>Business Documents</h4>
+                            <p>Professional business documents, reports, and presentations</p>
+                        </div>
+                    </div>
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h3>Business Printing</h3>
+                            <p>Professional document printing</p>
+                            <button class="view-btn" onclick="openModal('printing-1')">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="printing">
+                    <div class="gallery-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-palette"></i>
+                            <h4>Color Printing</h4>
+                            <p>Vibrant color printing for brochures, flyers, and marketing materials</p>
+                        </div>
+                    </div>
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h3>Color Prints</h3>
+                            <p>High-quality color printing</p>
+                            <button class="view-btn" onclick="openModal('printing-2')">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="printing">
+                    <div class="gallery-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-image"></i>
+                            <h4>Large Format</h4>
+                            <p>Large format printing for posters, banners, and signage</p>
+                        </div>
+                    </div>
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h3>Large Format</h3>
+                            <p>Poster and banner printing</p>
+                            <button class="view-btn" onclick="openModal('printing-3')">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Binding Samples -->
+                <div class="gallery-item" data-category="binding">
+                    <div class="gallery-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-book"></i>
+                            <h4>Spiral Binding</h4>
+                            <p>Professional spiral binding for reports, manuals, and presentations</p>
+                        </div>
+                    </div>
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h3>Spiral Binding</h3>
+                            <p>Professional spiral bound documents</p>
+                            <button class="view-btn" onclick="openModal('binding-1')">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="binding">
+                    <div class="gallery-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-book-open"></i>
+                            <h4>Perfect Binding</h4>
+                            <p>Professional perfect binding for books, catalogs, and manuals</p>
+                        </div>
+                    </div>
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h3>Perfect Binding</h3>
+                            <p>Professional book binding</p>
+                            <button class="view-btn" onclick="openModal('binding-2')">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="binding">
+                    <div class="gallery-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-clipboard"></i>
+                            <h4>Comb Binding</h4>
+                            <p>Durable comb binding for reports and training materials</p>
+                        </div>
+                    </div>
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h3>Comb Binding</h3>
+                            <p>Durable comb bound documents</p>
+                            <button class="view-btn" onclick="openModal('binding-3')">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lamination Samples -->
+                <div class="gallery-item" data-category="lamination">
+                    <div class="gallery-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-shield-alt"></i>
+                            <h4>Document Lamination</h4>
+                            <p>Professional document lamination for protection and durability</p>
+                        </div>
+                    </div>
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h3>Document Lamination</h3>
+                            <p>Protected document lamination</p>
+                            <button class="view-btn" onclick="openModal('lamination-1')">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="lamination">
+                    <div class="gallery-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-id-card"></i>
+                            <h4>ID Card Lamination</h4>
+                            <p>Professional lamination for ID cards and certificates</p>
+                        </div>
+                    </div>
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h3>ID Card Lamination</h3>
+                            <p>Professional ID protection</p>
+                            <button class="view-btn" onclick="openModal('lamination-2')">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="lamination">
+                    <div class="gallery-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-certificate"></i>
+                            <h4>Certificate Lamination</h4>
+                            <p>Professional lamination for certificates and awards</p>
+                        </div>
+                    </div>
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h3>Certificate Lamination</h3>
+                            <p>Professional certificate protection</p>
+                            <button class="view-btn" onclick="openModal('lamination-3')">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for Image View -->
+    <div id="gallery-modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div class="modal-image">
+                <div class="image-placeholder">
+                    <i class="fas fa-image"></i>
+                    <h3 id="modal-title">Image Title</h3>
+                    <p id="modal-description">Image description</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-print"></i>
+                        <span>Ragu Printers</span>
+                    </div>
+                    <p>Your trusted partner for all printing and service needs. Quality guaranteed, service excellence delivered.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="services.html">Printer Sales</a></li>
+                        <li><a href="services.html">Printer Repair</a></li>
+                        <li><a href="services.html">Printing Services</a></li>
+                        <li><a href="services.html">Xerox Services</a></li>
+                        <li><a href="services.html">Binding</a></li>
+                        <li><a href="services.html">Lamination</a></li>
+                    </ul>
+                </div>
+                
+                 <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Ragu Printers & Photostat , near Ring road roundana,perundurairoad,Thindal, Erode,TamilNadu</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 6383146661</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>rppprinterserode@gmail.com</span>
+                        </div>
+                    </div>
+                    
+                    <div class="business-hours">
+                        <h4>Business Hours</h4>
+                        <p>Mon-Sat: 7:30 AM - 9:00 PM</p>
+                        <p>Sun: Closed</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Ragu Printers Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- AI Chatbot -->
+    <div id="chatbot-container" class="chatbot-container">
+        <div id="chatbot-toggle" class="chatbot-toggle">
+            <i class="fas fa-comments"></i>
+        </div>
+        <div id="chatbot-widget" class="chatbot-widget">
+            <div class="chatbot-header">
+                <h4>Ragu Printers Assistant</h4>
+                <button id="chatbot-close" class="chatbot-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div id="chatbot-messages" class="chatbot-messages">
+                <div class="message bot-message">
+                    <p>Hello! I'm here to help you with your printing needs. How can I assist you today?</p>
+                </div>
+            </div>
+            <div class="chatbot-input">
+                <input type="text" id="chatbot-input-field" placeholder="Type your message...">
+                <button id="chatbot-send" class="chatbot-send">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/chatbot.js"></script>
+</body>
+</html>
