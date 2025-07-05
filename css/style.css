@@ -1706,9 +1706,9 @@ section {
     }
 
     .chatbot-widget {
-        width: 90vw;
+        /*width: 90vw;
         right: 5vw;
-        left: 5vw;
+        left: 5vw;*/
     }
 
     .chatbot-toggle {
@@ -1720,7 +1720,10 @@ section {
     .hero-title {
         font-size: 2rem;
     }
-
+.hero-text{
+    margin: 150px 0 0 0 ;
+    
+}
     .page-header h1 {
         font-size: 2rem;
     }

@@ -57,7 +57,7 @@
             
             fallback: [
                 "I'd be happy to help you with that! For specific questions about our services, pricing, or to schedule an appointment, please call us at 6383146661 or visit our contact page.",
-                "That's a great question! Our team would be better equipped to help you with detailed information. Please contact us at (234) 6383146661 or stop by our shop.",
+                "That's a great question! Our team would be better equipped to help you with detailed information. Please contact us at 6383146661 or stop by our shop.",
                 "I want to make sure I give you the most accurate information. Please call us at 6383146661 or email rppprinterserode@gmail.com for detailed assistance."
             ]
         },
