@@ -1,4 +1,4 @@
-// Ragu Printers  - AI Chatbot
+// RPP Printers  - AI Chatbot
 // Professional chatbot for customer inquiries and support
 
 (function() {
@@ -8,8 +8,8 @@
     const chatbotConfig = {
         responses: {
             greetings: [
-                "Hello! I'm the Ragu Printers Assistant. How can I help you with your printing needs today?",
-                "Hi there! Welcome to Ragu Printers. What can I assist you with?",
+                "Hello! I'm the RPP Printers Assistant. How can I help you with your printing needs today?",
+                "Hi there! Welcome to RPP Printers. What can I assist you with?",
                 "Good day! I'm here to help with any questions about our printing services. How may I assist you?"
             ],
             
@@ -160,7 +160,7 @@
 
     // Add Initial Message
     function addInitialMessage() {
-        const welcomeMessage = "Hello! I'm the Ragu Printers Assistant. I can help you with information about our printing services, pricing, location, and hours. How can I assist you today?";
+        const welcomeMessage = "Hello! I'm the RPP Printers Assistant. I can help you with information about our printing services, pricing, location, and hours. How can I assist you today?";
         addMessage(welcomeMessage, 'bot');
     }
 
@@ -306,7 +306,7 @@
 
         const typingElement = document.createElement('div');
         typingElement.className = 'message bot-message typing-indicator';
-        typingElement.innerHTML = '<p>Ragu Printers Assistant is typing...</p>';
+        typingElement.innerHTML = '<p>RPP Printers Assistant is typing...</p>';
         
         elements.chatbotMessages.appendChild(typingElement);
         elements.chatbotMessages.scrollTop = elements.chatbotMessages.scrollHeight;
@@ -426,7 +426,7 @@
     }
 
     // Expose chatbot functions globally
-    window.RaguPrintersChatbot = {
+    window.RPPPrintersChatbot = {
         init: initChatbot,
         toggle: toggleChatbot,
         open: openChatbot,

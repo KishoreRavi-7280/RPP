@@ -1,4 +1,4 @@
-// Ragu Printers - Main JavaScript File
+// RPP Printers - Main JavaScript File
 // Handles all interactive functionality and animations
 
 (function() {
@@ -80,24 +80,24 @@
             btn.addEventListener('click', handleFilterClick);
         });
 
-        // Form submission
-        if (elements.contactForm) {
-            elements.contactForm.addEventListener('submit', handleFormSubmit);
-        }
+        // // Form submission
+        // if (elements.contactForm) {
+        //     elements.contactForm.addEventListener('submit', handleFormSubmit);
+        // }
 
 
-                  // Product buttons
-        document.querySelectorAll('.product-btn').forEach(btn => {
-            btn.addEventListener('click', function() {
-                // Get product name from the card
-                const productCard = this.closest('.product-card');
-                const productName = productCard.querySelector('.product-name').textContent;
-                const productBrand = productCard.querySelector('.product-brand').textContent;
+        //           // Product buttons
+        // document.querySelectorAll('.product-btn').forEach(btn => {
+        //     btn.addEventListener('click', function() {
+        //         // Get product name from the card
+        //         const productCard = this.closest('.product-card');
+        //         const productName = productCard.querySelector('.product-name').textContent;
+        //         const productBrand = productCard.querySelector('.product-brand').textContent;
                 
-                // Redirect to contact page with product info
-                window.location.href = `contact.html?product=${encodeURIComponent(productBrand + ' ' + productName)}`;
-            });
-        });
+        //         // Redirect to contact page with product info
+        //         window.location.href = `contact.html?product=${encodeURIComponent(productBrand + ' ' + productName)}`;
+        //     });
+        // });
 
         // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -809,7 +809,7 @@
     }
 
     // Expose global functions
-    window.RaguPrinters = {
+    window.RPPPrinters = {
         init: init,
         openModal: window.openModal,
         closeModal: closeModal,
